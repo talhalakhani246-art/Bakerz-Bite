@@ -1,0 +1,114 @@
+    :root{
+      --primary:#6B3E26;
+      --secondary:#D99A5B;
+      --accent:#F4C27A;
+      --cream:#FFF8F0;
+      --dark:#2B1A12;
+      --text:#4A3428;
+      --white:#fff;
+      --shadow:0 12px 35px rgba(43,26,18,.12);
+      --radius:20px;
+    }
+
+    html{
+      scroll-behavior: smooth;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+    box-sizing: border-box;
+    }
+    #nav2 {
+    background-color: var(--primary);
+    height: 70px;
+}
+
+#nav1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Brand */
+.navbar-brand {
+    color: white !important;
+    font-size: 24px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* Links */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 8px 10px;
+    white-space: nowrap;
+}
+
+.navbar .nav-link:hover {
+    color: var(--accent) !important;
+}
+
+/* Right side */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    white-space: nowrap;
+}
+
+.login-btn,
+.cart-btn {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-btn:hover,
+.cart-btn:hover {
+    color: var(--accent);
+}
+
+.login-btn i {
+    margin-right: 6px;
+}
+
+.cart-btn {
+    font-size: 19px;
+}
+.navbar-brand i{
+  color: var(--accent);
+}
+      #ticker{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+background-color: var(--primary);  
+color: white;
+overflow: hidden;
+display: flex;
+align-items: center;
+height: 40px;
+z-index: 9999;
+    }
+    .ticker-track{
+      white-space: nowrap;
+      display: inline-block;
+      animation: moveText 8s linear infinite;
+    }
+    @keyframes moveText {
+      0%{
+        transform: translateX(100vw);
+      }
+
+      100%{
+        transform: translateX(-100%);
+      }
+    }
