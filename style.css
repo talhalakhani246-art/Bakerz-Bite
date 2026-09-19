@@ -276,3 +276,107 @@ background-color: var(--secondary);
     font-size: 12px;
     color: #666;
 }
+.foot {
+  background-color: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 50px 70px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.m-fot {
+  width: 300px;
+}
+
+.m-fot h3 {
+  font-weight: 900;
+  color: #fff;
+}
+
+.m-fot p {
+  color: white;
+}
+
+.m-fot a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  line-height: 2.5;
+}
+
+/* Sirf Social Media Icons */
+.icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.icons i {
+  width: 45px;
+  height: 45px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icons i:hover {
+  background-color: white;
+  color: var(--dark);
+}
+.faq-section {
+  padding: 70px 0;
+  background-color: var(--cream);
+}
+
+.faq-section h2 {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.faq-section p {
+  color: var(--text);
+}
+
+.accordion {
+  max-width: 900px;
+  margin: auto;
+}
+
+.accordion-item {
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 12px !important;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(43, 26, 18, 0.08);
+}
+
+.accordion-button {
+  font-weight: 600;
+  color: var(--dark);
+  background-color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+  background-color: var(--primary);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  color: var(--text);
+  background-color: white;
+  line-height: 1.7;
+}
